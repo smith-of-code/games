@@ -83,9 +83,7 @@ var game = {
        `);
        var level;
         if (solution){
-            alert(`Уровень 1 : цена за правильный ответ = 100 бубликов
-                    твой счет ${this.money} бубликов
-                    `);
+            alert(`Уровень 1 : цена за правильный ответ = 100 бубликов`);
             solution = this.getQuestion(1);
         }else {
             alert(`Вы проиграли`);
