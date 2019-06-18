@@ -83,20 +83,26 @@ var game = {
        `);
        var level;
         if (solution){
-            alert(`Уровень 1 : цена за правильный ответ = 100 бубликов`);
+            alert(`Уровень 1 : цена за правильный ответ = 100 бубликов
+                    твой счет ${this.money} бубликов
+                    `);
             solution = this.getQuestion(1);
         }else {
             alert(`Вы проиграли`);
         }
         if (solution){
-            alert(`Уровень 2 : цена за правильный ответ = 500 бубликов`);
+            alert(`Уровень 2 : цена за правильный ответ = 500 бубликов
+                    твой счет ${this.money} бубликов
+                    `);
             solution = this.getQuestion(2);
         }else {
             alert(`Вы проиграли`);
             return
         }
         if (solution){
-            alert(`Уровень 1 : цена за правильный ответ = 1000 бубликов`);
+            alert(`Уровень 1 : цена за правильный ответ = 1000 бубликов
+                    твой счет ${this.money} бубликов
+                    `);
             solution = this.getQuestion(3);
         }else {
             alert(`Вы проиграли`);
