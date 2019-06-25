@@ -24,9 +24,11 @@ function generateWords() {
 document.querySelector('.button').addEventListener('click',handleWord);
 function handleWord() {
     let $word = document.querySelector('.word');
+    let $wordBox = document.querySelector('.word-box');
     let button = event.target;
     if (button.classList.contains('button')){
-        $word.innerHTML = generateWords()
+        $word.innerHTML = generateWords();
+        $wordBox.classList.add('word-filter')
     }
 
 }
